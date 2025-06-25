@@ -7,6 +7,8 @@ function App() {
     const users: User[] = [
         { name: "Lincoln", age: 17 },
         { name: "Miguel", age: 18 },
+        { name: "Pedro", age: 20 },
+        { name: "Ana", age: 37 },
     ];
     return (
         <div className="App">
