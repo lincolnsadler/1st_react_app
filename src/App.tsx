@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import UserCard from "./components/UserCard";
+import { User } from "./types/User";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const users: User[] = [
+        { name: "Lincoln", age: 17 },
+        { name: "Miguel", age: 18 },
+    ];
+    return (
+        <div className="App">
+            <h1>Lista de Usuários</h1>
+            {users.map((user, index) => (
+                <UserCard key={index} user={user} />
+            ))}
+        </div>
+    );
 }
 
 export default App;
