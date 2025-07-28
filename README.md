@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Getting Started with Create React App / JUST A SIMPLE TS TYPE TO USERS AND A SIMPLE TEMPLATE IN REACT, **I'LL DO A FORM IN FUTURE**
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
